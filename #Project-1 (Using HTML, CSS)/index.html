@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice-cream Corner</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- firstly make navbar, its list and create its id and list class for its css  -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Ice-cream Corner.com">
+        </div>
+        <ul>
+           <li class="item"><a href="#home">Home</a></li>
+           <li class="item"><a href="#services-container">Services</a></li>
+           <li class="item"><a href="#client-section">Our Clients</a></li>
+           <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- then section for each section of website and create each section id  -->
+    <!-- like give home section id and same goes to other section -->
+    <section id="home">
+        <!-- give home section work a class for css -->
+        <h1 class="h-primary">Welcome To Ice-cream Corner</h1>
+        <p>
+            At Ice-cream Corner, we believe that every day is a perfect day for ice cream. Our passion for crafting delicious frozen treats has made us your go-to destination for all things sweet, creamy, and utterly indulgent. Step inside our whimsical world of flavors and let your taste buds embark on a delightful journey.
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section id="services-container">
+        <!-- after giving service section id give this section work a class -->
+        <h1 class="h-primary center">Our Services </h1>
+        <!-- now what are services id -->
+        <div id="services">
+            <!-- for first box and same goes to other boxes  -->
+            <!-- give each work class and ids like for para heading and many more -->
+            <div class="Box">
+                <img src="order.jpg" alt="order here">
+                <h2 class="h-secondary">Ice-cream ordering</h2>
+                <p class="center">Prepare to be dazzled by our ever-evolving menu of handcrafted ice cream flavors. From classic favorites like creamy Vanilla and rich Chocolate to inventive creations like Lavender Honey and Caramelized Fig, there's a scoop for every palate. We source the finest ingredients to ensure that each bite is a burst of pure delight.</p>
+            </div>
+            <div class="Box">
+               <img src="bulk-order.jpg" alt="bulk-order">
+                <h2 class="h-secondary">Bulk ordering</h2>
+                <p class="center">While our scoops of ice cream are the stars of the show, we also offer an array of delectable treats to satisfy your cravings. Dive into one of our indulgent sundaes, sip on a thick and creamy milkshake, or try our mouthwatering ice cream sandwiches – each bite is a taste of heaven.</p>
+            </div>
+            <div class="Box">
+                <img src="deliver.jpg" alt="delivery">
+                <h2 class="h-secondary">Food Delivery</h2>
+                <p class="center">We've expanded our delivery radius to bring our frozen delights to even more ice cream enthusiasts. Check if we deliver to your area and indulge in your favorites today.Our user-friendly website and mobile app make placing an order a breeze. Customize your treats, select your delivery address, and get ready to savor the sweetness.</p>
+            </div>    
+        </div>
+        </section>
+        <section id="client-section">
+            <h1 class="h-primary center">Our Clients</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="https://1000logos.net/wp-content/uploads/2016/10/Aqua-themed-apple-logo.png" alt="our client">
+                </div>
+                <div class="client-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/906/906309.png" alt="our client">
+                </div>
+                <div class="client-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Skype-icon1.png" alt="our client">
+                </div>
+                <div class="client-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/HP_New_Logo_2D.svg/2048px-HP_New_Logo_2D.svg.png" alt="our client">
+                </div>
+            </div>
+        </section>
+            <section id="contact">
+                <h1 class="h-primary center">Contact Us</h1>
+                <div id="contact-box">
+                    <form id="contact-form" action="">
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone: </label>
+                            <input type="phone" name="phone" id="phone" placeholder="Enter your Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message: </label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="bn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+        </section>    
+        <footer> 
+            <div class="center">
+                Copyright &copy; www.Ice-cream Corner.com All rights reserved
+            </div>
+        </footer>
+</body>
+</html>

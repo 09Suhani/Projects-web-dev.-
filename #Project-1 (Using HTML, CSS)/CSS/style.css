@@ -1,0 +1,223 @@
+                           /* NAVBAR CSS */
+
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+/* html,body{
+    width: 100%;
+    height: 100%;
+} */
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+}
+#navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        /* When multiple positioned elements overlap on a web page, the z-index property allows you to specify which element should appear on top of the others and which should be behind. */
+        z-index: -1;
+        opacity: 0.69;
+}
+/* Navigation bar: Logo and Images */
+#logo{
+    margin: 10px 45px;
+}
+#logo img{
+    height: 70px;
+    border: 1px;
+    border-radius: 50%;
+    margin: 1px 2px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: rgb(253, 120, 220);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: darkmagenta;
+    background-color: white;
+}
+                                  /* Section CSS */
+/* home section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 633px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+   background-image: url('https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+   background-repeat: no-repeat;
+   background-size:cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    font-size:30px;
+    text-decoration: underline purple;
+}
+#home p{
+  color:black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: rgb(253, 120, 220);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color:darkmagenta;
+}
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+    /* flex-direction: row; */
+    /* Making a section on your webpage have a flex-direction of row will primarily affect how the items inside that section are laid out horizontally. It won't directly impact the stickiness of your navbar. */
+}
+#services .Box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 20px;
+}
+#services .Box img {
+    height: 230px;
+    margin: auto;
+    display: block;  
+}
+#services .Box p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 32px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px;
+    text-align: center;
+    font-family: cursive;
+}
+.center{
+    text-align: center;
+}
+/* client section */
+#client-section{
+    height: 500px;
+}
+#clients{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-wrap determines whether the items should wrap onto a new line or remain on the same line when they reach the edge of the container. */
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+     padding: 18px;
+     height: 124px;
+}
+#client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://i.pinimg.com/originals/44/08/f6/4408f6f62181d6855dec28074ccbbb69.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 170%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* contact section */
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border-color: black;
+   }    
+ #contact-box form{
+       width: 40%
+   }
+   #contact-box label{
+        font-size: 1.1rem;    
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Unbounded', cursive;
+   }
+   .bn{
+    padding: 3px 14px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color: black;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bn:hover{
+    color:rgb(253, 120, 220);
+    background-color:black;
+}
+/* footer section */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
